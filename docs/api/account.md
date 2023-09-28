@@ -95,13 +95,3 @@ icon: user
 ## 获取当前账号在线客户端列表 <Badge text="未实现" type="danger" />
 
 该接口用于获取当前账号在线客户端列表。
-
-### API 端点
-
-`/get_online_clients`
-
-### 响应
-
-| 字段 | 类型 | 说明 |
-| ---- | ---- | ---- |
-| N/A  | N/A  | N/A  |
