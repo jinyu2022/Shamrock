@@ -24,7 +24,7 @@ export default hopeTheme({
       text: 'API 文档',
       prefix: 'api',
       icon: 'book',
-      children: ['request-response', 'account', 'contact', 'user']
+      children: ['request-response', 'account', 'contact', 'user', 'message']
     }
   ]
 })
