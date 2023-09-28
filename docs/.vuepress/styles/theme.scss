@@ -9,14 +9,12 @@
   backdrop-filter: blur(8px) !important;
 }
 
-div[class*='language-'] {
-  background: transparent !important;
-  backdrop-filter: blur(16px) !important;
-}
+div[class*='language-'],
 .hint-container {
   background: transparent !important;
   backdrop-filter: blur(16px) !important;
 }
+
 .highlight-line {
   opacity: 0.5;
 }

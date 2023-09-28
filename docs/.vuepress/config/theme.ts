@@ -8,8 +8,8 @@ export default hopeTheme({
   docsDir: 'docs',
   navbar: [
     { text: '首页', link: '/', icon: 'home' },
-    { text: '指南', link: '/guide/getting-started', icon: 'lightbulb' },
-    { text: 'API 文档', link: '/api/request-response', icon: 'book' },
+    { text: '指南', link: '/guide', icon: 'lightbulb' },
+    { text: 'API 文档', link: '/api', icon: 'book' },
     { text: '常见问题', link: '/faq', icon: 'circle-question' },
     { text: 'QQ群', link: 'https://qm.qq.com/q/LlHABKWhu4', icon: 'fa-brands fa-qq' }
   ],
@@ -24,7 +24,7 @@ export default hopeTheme({
       text: 'API 文档',
       prefix: 'api',
       icon: 'book',
-      children: ['request-response', 'account', 'user']
+      children: ['request-response', 'account', 'contact', 'user']
     }
   ]
 })
