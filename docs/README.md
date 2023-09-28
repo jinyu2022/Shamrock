@@ -11,7 +11,7 @@ actions:
     type: primary
     icon: arrow-right
   - text: API 文档
-    link: /api/reference
+    link: /api/request-response
     type: secondary
     icon: book
 features:
