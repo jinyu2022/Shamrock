@@ -2,17 +2,18 @@
 title: 首页
 home: true
 icon: home
-heroText: Shamrock 使用文档
-tagline: 基于 Xposed 实现 Onebot11/12 标准的 QQ 机器人框架
+heroText: Shamrock
+tagline: 基于 Xposed 实现 OneBot 标准的 QQ 机器人框架
 heroImage: https://element.ele.me/static/theme-index-blue.c38b733.png
 actions:
   - text: 快速开始
     link: /getting-started
     type: primary
-    icon: download
-  - text: 查看指南
-    link: /guide
-    icon: lightbulb
+    icon: arrow-right
+  - text: API 文档
+    link: /api
+    type: secondary
+    icon: book
 features:
   - title: 安全稳定
     details: 采用 Xposed Hook 实现，不会影响系统稳定性
