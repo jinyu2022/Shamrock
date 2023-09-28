@@ -32,6 +32,7 @@ export default hopeTheme({
         'message',
         'resources',
         'dispose',
+        'group',
         'file'
       ]
     }
