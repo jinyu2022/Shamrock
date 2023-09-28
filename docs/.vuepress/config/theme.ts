@@ -31,7 +31,8 @@ export default hopeTheme({
         'user',
         'message',
         'resources',
-        'dispose'
+        'dispose',
+        'file'
       ]
     }
   ]
