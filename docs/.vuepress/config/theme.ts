@@ -18,7 +18,7 @@ export default hopeTheme({
       text: '指南',
       prefix: 'guide',
       icon: 'lightbulb',
-      children: ['getting-started', 'configuration', 'features', 'deploy']
+      children: ['getting-started', 'configuration']
     }
   ]
 })
