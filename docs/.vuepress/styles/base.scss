@@ -14,9 +14,11 @@ table {
   text-align: center !important;
 }
 
-table,
-table tr:nth-child(2n) {
+thead,
+tbody,
+tr:nth-child(2n) {
   background: transparent !important;
+  backdrop-filter: blur(16px) !important;
 }
 
 table td {
