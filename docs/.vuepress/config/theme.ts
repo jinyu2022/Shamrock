@@ -22,6 +22,13 @@ export default hopeTheme({
       children: ['getting-started', 'configuration']
     },
     {
+      text: '进阶',
+      prefix: 'advanced',
+      link: '/advanced',
+      icon: 'rocket',
+      children: ['voice']
+    },
+    {
       text: 'API 文档',
       prefix: 'api',
       link: '/api',
