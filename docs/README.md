@@ -7,11 +7,11 @@ tagline: 基于 Xposed 实现 OneBot 标准的 QQ 机器人框架
 heroImage: https://element.ele.me/static/theme-index-blue.c38b733.png
 actions:
   - text: 快速开始
-    link: /getting-started
+    link: /guide/getting-started
     type: primary
     icon: arrow-right
   - text: API 文档
-    link: /api
+    link: /api/reference
     type: secondary
     icon: book
 features:
