@@ -17,12 +17,14 @@ export default hopeTheme({
     {
       text: '指南',
       prefix: 'guide',
+      link: '/guide',
       icon: 'lightbulb',
       children: ['getting-started', 'configuration']
     },
     {
       text: 'API 文档',
       prefix: 'api',
+      link: '/api',
       icon: 'book',
       children: [
         'request-response',
