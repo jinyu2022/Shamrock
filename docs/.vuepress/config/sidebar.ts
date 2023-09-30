@@ -15,7 +15,7 @@ const children = {
     'file',
     'other'
   ],
-  message: [],
+  message: ['format', 'normal', 'media', 'special', 'advanced'],
   event: []
 }
 
