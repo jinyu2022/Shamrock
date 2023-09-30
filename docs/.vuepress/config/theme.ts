@@ -1,50 +1,14 @@
 import { hopeTheme } from 'vuepress-theme-hope'
+import { shamrockNavbar } from './navbar'
+import { shamrockSidebar } from './sidebar'
 
 export default hopeTheme({
+  logo: '/logo.png',
   iconAssets: 'fontawesome-with-brands',
   repo: 'linxinrao/Shamrock',
   docsRepo: 'linxinrao/Shamrock',
   docsBranch: 'docs',
   docsDir: 'docs',
-  navbar: [
-    { text: '首页', link: '/', icon: 'home' },
-    { text: '指南', link: '/guide', icon: 'lightbulb' },
-    { text: 'API 文档', link: '/api', icon: 'book' },
-    { text: '常见问题', link: '/faq', icon: 'circle-question' },
-    { text: 'QQ群', link: 'https://qm.qq.com/q/LlHABKWhu4', icon: 'fa-brands fa-qq' }
-  ],
-  sidebar: [
-    {
-      text: '指南',
-      prefix: 'guide',
-      link: '/guide',
-      icon: 'lightbulb',
-      children: ['getting-started', 'configuration']
-    },
-    {
-      text: '进阶',
-      prefix: 'advanced',
-      link: '/advanced',
-      icon: 'rocket',
-      children: ['voice']
-    },
-    {
-      text: 'API 文档',
-      prefix: 'api',
-      link: '/api',
-      icon: 'book',
-      children: [
-        'request-response',
-        'account',
-        'contact',
-        'user',
-        'message',
-        'resources',
-        'dispose',
-        'group',
-        'file',
-        'other'
-      ]
-    }
-  ]
+  navbar: shamrockNavbar,
+  sidebar: shamrockSidebar
 })
