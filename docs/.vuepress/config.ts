@@ -3,6 +3,7 @@ import { searchProPlugin } from 'vuepress-plugin-search-pro'
 import theme from './config/theme'
 
 export default defineUserConfig({
+  base: '/Shamrock/',
   title: 'Shamrock',
   lang: 'zh-CN',
   port: 1421,
