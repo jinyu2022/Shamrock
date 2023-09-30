@@ -1,7 +1,7 @@
 import { sidebar } from 'vuepress-theme-hope'
 
 const children = {
-  guide: ['getting-started', 'configuration'],
+  guide: ['getting-started', 'configuration', 'faq'],
   advanced: ['voice'],
   api: [
     'request-response',
@@ -32,15 +32,15 @@ const shamrockSidebar = sidebar([
     text: '进阶',
     prefix: 'advanced',
     link: '/advanced',
-    icon: 'rocket',
+    icon: 'gem',
     collapsible: true,
     children: children.advanced
   },
   {
-    text: 'API 文档',
+    text: '接口',
     prefix: 'api',
     link: '/api',
-    icon: 'book',
+    icon: 'laptop-code',
     collapsible: true,
     children: children.api
   },
