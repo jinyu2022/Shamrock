@@ -16,14 +16,13 @@ const children = {
     'other'
   ],
   message: ['format', 'normal', 'media', 'special', 'advanced'],
-  event: []
+  event: ['general-data', 'message', 'notice', 'request']
 }
 
 const shamrockSidebar = sidebar([
   {
     text: '指南',
     prefix: 'guide',
-    link: '/guide',
     icon: 'lightbulb',
     collapsible: true,
     children: children.guide
@@ -31,7 +30,6 @@ const shamrockSidebar = sidebar([
   {
     text: '进阶',
     prefix: 'advanced',
-    link: '/advanced',
     icon: 'gem',
     collapsible: true,
     children: children.advanced
@@ -39,7 +37,6 @@ const shamrockSidebar = sidebar([
   {
     text: '接口',
     prefix: 'api',
-    link: '/api',
     icon: 'laptop-code',
     collapsible: true,
     children: children.api
@@ -47,7 +44,6 @@ const shamrockSidebar = sidebar([
   {
     text: '消息',
     prefix: 'message',
-    link: '/message',
     icon: 'comment',
     collapsible: true,
     children: children.message
@@ -55,7 +51,6 @@ const shamrockSidebar = sidebar([
   {
     text: '事件',
     prefix: 'event',
-    link: '/event',
     icon: 'bell',
     collapsible: true,
     children: children.event
