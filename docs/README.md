@@ -22,7 +22,7 @@ features:
     details: 无需安装额外的应用，只需安装 Xposed 框架即可
     icon: rocket
   - title: 适配快速
-    details: 适配 Onebot11/12 标准，可快速适配其他 Onebot 标准的机器人框架
+    details: 适配 OneBot 11/12 标准，可快速适配其他 OneBot 标准的机器人框架
     icon: magic
 footer: '&copy;2023 Shamrock Team All Rights Reserved'
 footerHtml: true
