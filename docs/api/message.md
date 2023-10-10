@@ -91,9 +91,38 @@ icon: comment
 | message_id | `int32` | 消息 ID |
 | time       | `int64` | 时间戳  |
 
-### 获取消息
+## 获取消息
 
-该接口用于获取消息。
+### API 端点
+
+终结点: `/get_msg`
+
+### 参数
+
+| 字段         | 类型  | 说明   |
+| ------------ | ----- | ------ |
+| `message_id` | int32 | 消息id |
+
+### 响应
+
+| 字段           | 类型    | 说明                                   |
+| -------------- | ------- | -------------------------------------- |
+| `group`        | bool    | 是否是群消息                           |
+| `group_id`     | int64   | 是群消息时的群号(否则不存在此字段)     |
+| `message_id`   | int32   | 消息id                                 |
+| `real_id`      | int32   | 消息真实id                             |
+| `message_type` | string  | 群消息时为`group`, 私聊消息为`private` |
+| `sender`       | [Sender](#sender)  | 发送者                     |
+| `time`         | int32   | 发送时间                               |
+| `message`      | message | 消息内容                               |
+| `raw_message`  | message | 原始消息内容                           |
+
+### Sender
+
+| 字段       | 类型   | 说明         |
+| ---------- | ------ | ------------ |
+| `nickname` | string | 发送者昵称   |
+| `user_id`  | int64  | 发送者 QQ 号 |
 
 ### API 端点
 
