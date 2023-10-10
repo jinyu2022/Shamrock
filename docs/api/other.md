@@ -201,7 +201,7 @@ icon: feather-alt
 
 ### API 端点
 
-`/upload_group_image`
+`/get_start_time`
 
 ### 请求类型
 
@@ -216,6 +216,20 @@ icon: feather-alt
   "data": 1696749716155
 }
 ```
+
+## 关闭Shamrock
+
+### API 端点
+
+`/shut`
+
+### 请求类型
+
+`POST` | `GET` | `不支持WS`
+
+### 响应
+
+无响应
 
 ## [实验] 上传群图片
 
