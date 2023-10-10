@@ -3,8 +3,8 @@ import { shamrockNavbar } from './navbar'
 import { shamrockSidebar } from './sidebar'
 
 export default hopeTheme({
-  favicon: '/favicon.ico',
-  logo: '/logo.png',
+  favicon: '/shamrock.png',
+  logo: '/shamrock.png',
   iconAssets: 'fontawesome-with-brands',
   repo: 'linxinrao/Shamrock',
   docsRepo: 'linxinrao/Shamrock',
