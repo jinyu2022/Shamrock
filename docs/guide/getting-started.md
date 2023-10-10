@@ -26,27 +26,35 @@ Shamrock 仍然处于快速开发阶段，可能会有大量API在未来版本�
 ## 部署
 
 ::: warning 注意
+请使用Shamrock兼容的QQ客户端部署，见 [支持的QQ版本](https://linxinrao.github.io/Shamrock/guide/faq.html#支持的qq版本)
 如果您使用了 QRSpeed/ShamrockNative 有关的插件，请确保 Shamrock 存活。  
 无论什么情况都请确保 QQ 客户端 存活。  
 禁止对 QQ 客户端 隐藏 Shamrock，这将导致无法运行。  
 首次启动，必须打开 Shamrock，否则无法推送配置文件导致失败。
 :::
 
-### 有 Root 环境
+### 有 XP 环境
 
-- 安装版本不低于 `8.9.68` 且不高于 `8.9.80` 的 QQ 客户端
 - 打开 QQ 客户端，登录你的 QQ 账号
-- 安装 Shamrock 并在 Xposed 启用 Shamrock 模块
-- `重新启动 QQ 客户端` 或 `重新启动你的手机`
-- 打开 Shamrock，并打开 QQ 客户端，此时 Shamrock 会显示已激活
+- 安装 Shamrock 并在 Xposed 启用 Shamrock 模块，如果使用 LSPosed 则需要勾选模块作用域(默认QQ)
+- 启动 Shamrock 并`重新启动 QQ 客户端`，如果环境为 Xposed 则需要重启手机
+- 此时 Shamrock 会显示已激活
 
 ### 无 Root 环境
 
 #### 使用 LSPatch
 
-- 使用 LSPatch 加载 QQ 客户端，并启用 Shamrock 模块
-- 同时安装 Shamrock 和通过 LSPatch 修补的 QQ 客户端
-- 其他步骤同有 Root 环境
+- 打开 LSPatch 并在`管理`页面选择 `+` 新建修补，可以选择从存储目录选择QQAPK或者直接使用已经安装过的QQ
+- 修补模式默认且应该优先选择`本地模式`，这样方便直接更新 Shamrock 模块而不用重新修补，缺点是需要 LSPatch 保持后台运行
+- 其他配置保持默认，然后点击`开始修补`，修补完成后会提示安装(如果已经安装会提示卸载)
+- 安装 Shamrock 模块后在`管理`页面点击修补好的 QQ 选择`模块作用域` 勾选上 Shamrock 模块然后保存
+- 启动 Shamrock 并`重新启动 QQ 客户端`
+- 此时 Shamrock 会显示已激活
+
+::: warning 注意
+使用`本地模式`修补后需要保持LSPatch在后台运行，优点是模块更新无需重新修补QQ
+使用`集成模式`修补后无需保持LSPatch在后台运行，缺点是模块更新后需要重新修补QQ
+:::
 
 #### 使用 VirtualXposed
 
