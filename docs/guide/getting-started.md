@@ -26,7 +26,7 @@ Shamrock 仍然处于快速开发阶段，可能会有大量API在未来版本�
 ## 部署
 
 ::: warning 注意
-请使用Shamrock兼容的QQ客户端部署，见 [支持的QQ版本](https://linxinrao.github.io/Shamrock/guide/faq.html#支持的qq版本)
+请使用Shamrock兼容的QQ客户端部署，见 [支持的QQ版本](./faq.md#支持的qq版本)
 如果您使用了 QRSpeed/ShamrockNative 有关的插件，请确保 Shamrock 存活。  
 无论什么情况都请确保 QQ 客户端 存活。  
 禁止对 QQ 客户端 隐藏 Shamrock，这将导致无法运行。  
