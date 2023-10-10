@@ -5,7 +5,7 @@ icon: feather-alt
 
 ## 获取天气
 
-该接口用于获取天气。
+该接口用于获取天气，该接口调用来自QQ官方服务。
 
 ### API 端点
 
@@ -194,6 +194,26 @@ icon: feather-alt
     },
     "code": 0
   }
+}
+```
+
+## 获取Shamerock启动时间
+
+### API 端点
+
+`/upload_group_image`
+
+### 请求类型
+
+`POST` | `GET` | `不支持WS`
+
+### 响应
+
+```json
+{
+  "status": "ok",
+  "retcode": 0,
+  "data": 1696749716155
 }
 ```
 
