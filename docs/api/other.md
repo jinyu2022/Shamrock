@@ -3,6 +3,22 @@ title: 其他接口
 icon: feather-alt
 ---
 
+## 获取手机电池信息
+
+### API 端点
+
+`/get_device_battery`
+
+### 响应
+
+```json
+{
+  "battery": 44,
+  "scale": 3102000,
+  "status": 2
+}
+```
+
 ## 获取城市ADCode
 
 ### API 端点
