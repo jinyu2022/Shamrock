@@ -17,11 +17,11 @@ icon: user
 
 ### 响应
 
-| 字段      | 类型       | 说明   |
-|---------|----------|------|
-| uin     | `int64`  | QQ 号 |
-| isLogin | `bool`   | 是否登陆 |
-| nick    | `string` | 昵称   |
+| 字段    | 类型   | 说明     |
+| ------- | ------ | -------- |
+| uin     | int64  | QQ 号    |
+| isLogin | bool   | 是否登陆 |
+| nick    | string | 昵称     |
 
 ## 设置 QQ 个人资料
 
@@ -33,19 +33,19 @@ icon: user
 
 ### 参数
 
-| 字段          | 类型     | 必须 | 说明                     |
-| ------------- | -------- | ---- | ------------------------ |
-| nickname      | `string` | 是   | 昵称                     |
-| company       | `string` | 是   | 公司                     |
-| email         | `string` | 是   | 邮箱                     |
-| college       | `string` | 是   | 大学                     |
-| personal_note | `string` | 是   | 个人备注                 |
-| age           | `int`    | 否   | 年龄                     |
-| birthday      | `string` | 否   | 生日（格式：YYYY-MM-DD） |
+| 字段          | 类型   | 必须 | 说明                     |
+| ------------- | ------ | ---- | ------------------------ |
+| nickname      | string | 是   | 昵称                     |
+| company       | string | 是   | 公司                     |
+| email         | string | 是   | 邮箱                     |
+| college       | string | 是   | 大学                     |
+| personal_note | string | 是   | 个人备注                 |
+| age           | int32  | 否   | 年龄                     |
+| birthday      | string | 否   | 生日（格式：YYYY-MM-DD） |
 
 ### 响应
 
-该接口将返回处理结果。
+该接口将返回基本的 json 。
 
 ## 获取在线机型
 
@@ -57,22 +57,22 @@ icon: user
 
 ### 参数
 
-| 字段  | 类型     | 必须 | 说明 |
-| ----- | -------- | ---- | ---- |
-| model | `string` | 是   | 机型 |
+| 字段  | 类型   | 必须 | 说明 |
+| ----- | ------ | ---- | ---- |
+| model | string | 是   | 机型 |
 
 ### 响应
 
-| 字段     | 类型                             | 说明     |
-| -------- | -------------------------------- | -------- |
-| variants | [ModelDetail](#modeldetail) 列表 | 机型列表 |
+| 字段     | 类型                              | 说明     |
+| -------- | --------------------------------- | -------- |
+| variants | List<[ModelDetail](#modeldetail)> | 机型列表 |
 
-### ModelDetail
+#### ModelDetail
 
-| 字段       | 类型     | 说明         |
-| ---------- | -------- | ------------ |
-| model_show | `string` | 机型名称     |
-| need_pay   | `bool`   | 是否需要付费 |
+| 字段       | 类型   | 说明         |
+| ---------- | ------ | ------------ |
+| model_show | string | 机型名称     |
+| need_pay   | bool   | 是否需要付费 |
 
 ## 设置在线机型
 
@@ -84,14 +84,14 @@ icon: user
 
 ### 参数
 
-| 字段  | 类型     | 必须 | 说明 |
-| ----- | -------- | ---- | ---- |
-| model | `string` | 是   | 机型 |
-| manu  | `string` | 是   | 厂商 |
+| 字段  | 类型   | 必须 | 说明 |
+| ----- | ------ | ---- | ---- |
+| model | string | 是   | 机型 |
+| manu  | string | 是   | 厂商 |
 
 ### 响应
 
-该接口将返回处理结果。
+该接口将返回处理结果，其中 `data` 字段无数据。
 
 ## 获取当前账号在线客户端列表 <Badge text="未实现" type="danger" />
 
@@ -105,18 +105,18 @@ icon: user
 
 | 字段       | 类型 | 说明         |
 | ---------- | ---- | ------------ |
-| `no_cache` | bool | 是否无视缓存 |
+| no_cache | bool | 是否无视缓存 |
 
-### 响应数据
+### 响应
 
 | 字段      | 类型              | 说明           |
 | --------- | ----------------- | -------------- |
-| `clients` | [Device](#device) | 在线客户端列表 |
+| clients | Object<[Device](#device)> | 在线客户端列表 |
 
 #### Device
 
 | 字段          | 类型   | 说明     |
 | ------------- | ------ | -------- |
-| `app_id`      | int64  | 客户端ID |
-| `device_name` | string | 设备名称 |
-| `device_kind` | string | 设备类型 |
+| app_id    | int64  | 客户端ID |
+| device_name | string | 设备名称 |
+| device_kind | string | 设备类型 |
