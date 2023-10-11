@@ -13,7 +13,7 @@ icon: feather-alt
 
 | 字段 | 类型     | 必须 | 说明 |
 | ---- | -------- | ---- | ---- |
-| city | `string` | 是   | 城市 |
+| city | string | 是   | 城市 |
 
 ### 响应
 
@@ -39,8 +39,8 @@ icon: feather-alt
 
 | 字段 | 类型     | 必须 | 说明   |
 | ---- | -------- | ---- | ------ |
-| code | `string` | 是   | ADCode |
-| city | `string` | 是   | 城市   |
+| code | string | 是   | ADCode |
+| city | string | 是   | 城市   |
 
 ### 响应
 
@@ -255,8 +255,8 @@ icon: feather-alt
 
 | 字段   | 类型    | 必须 | 说明                 | 默认值 |
 | ------ | ------- | ---- | -------------------- | ------ |
-| start  | `int32` | 否   | 开始的行             |        |
-| recent | `bool`  | 否   | 是否只显示最近的日志 | false  |
+| start  | int32 | 否   | 开始的行             |        |
+| recent | bool  | 否   | 是否只显示最近的日志 | false  |
 
 ### 响应
 
@@ -298,6 +298,6 @@ icon: feather-alt
 
 | 字段   | 类型     | 必须 | 说明             |
 | ------ | -------- | ---- | ---------------- |
-| pic    | `string` | 是   | 图片base64       |
-| sender | `int64`  | 是   | QQ               |
-| troop  | `int64`  | 是   | 图片发送到的群聊 |
+| pic    | string | 是   | 图片base64       |
+| sender | int64  | 是   | QQ               |
+| troop  | int64  | 是   | 图片发送到的群聊 |

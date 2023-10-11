@@ -12,8 +12,8 @@ body:before {
 
 table {
   text-align: center !important;
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
 }
 
 thead,
@@ -25,7 +25,6 @@ tr:nth-child(2n) {
 
 table td {
   word-break: keep-all !important;
-  white-space: nowrap !important;
 }
 
 table th {
