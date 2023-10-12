@@ -10,6 +10,12 @@ export default hopeTheme({
   docsRepo: 'linxinrao/Shamrock',
   docsBranch: 'docs',
   docsDir: 'docs',
+  plugins: {
+    mdEnhance: {
+      // 添加选项卡支持
+      tabs: true,
+    },
+  },
   navbar: shamrockNavbar,
   sidebar: shamrockSidebar
 })
