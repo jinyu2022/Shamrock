@@ -14,4 +14,5 @@ icon: laptop-code
 - [处理相关](./dispose.md)
 - [群聊相关](./group.md)
 - [文件相关](./file.md)
+- [Shamrock相关](./shamrock.md)
 - [其他接口](./other.md)
