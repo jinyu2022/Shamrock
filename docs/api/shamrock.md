@@ -3,7 +3,48 @@ title: Shamrock接口
 icon: feather-alt
 ---
 
-## 
+## 下载文件到缓存目录
+
+### API 端点
+
+`/download_file`
+
+### 参数
+
+| 字段   | 类型    | 必须 | 说明                 | 默认值 |
+| ------ | ------- | ---- | -------------------- | ------ |
+| url  | string | 是   | 下载地址             |        |
+| thread_cnt | int32  | 否   | 下载的线程数量 |   |
+| headers | `string` or `array` | 否 | 请求头 | |
+
+#### 字符串格式示例
+
+```string
+User-Agent=YOUR_UA[\r\n]Referer=https://www.baidu.com
+```
+
+#### JSON数组
+
+```json
+[
+    "User-Agent=YOUR_UA",
+    "Referer=https://www.baidu.com"
+]
+```
+
+> `[\r\n]` 为换行符, 使用http请求时请注意编码
+
+### 响应
+
+```json
+{
+  "file": "/scard/Android/data/com.tencent.mobileqq/Tencent/Shamrock/xxxx"
+}
+```
+
+> 通过这个API下载的文件能直接放入CQ码作为图片发送
+>
+> 调用后会阻塞直到下载完成后才会返回数据，请注意下载大文件时的超时
 
 ## 获取手机电池信息
 
