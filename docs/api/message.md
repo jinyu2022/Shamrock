@@ -15,10 +15,6 @@ icon: comment
 
 `/send_private_msg`
 
-::: warning 注意
-该接口在 Websocket 中不可用。
-:::
-
 ### 参数
 
 | 字段        | 类型   | 必须 | 说明             |
@@ -41,10 +37,6 @@ icon: comment
 ### API 端点
 
 `/send_group_msg`
-
-::: warning 注意
-该接口在 Websocket 中不可用。
-:::
 
 ### 参数
 
