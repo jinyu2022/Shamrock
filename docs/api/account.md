@@ -15,13 +15,37 @@ icon: user
 
 `/get_login_info`
 
+### 参数
+
+::: tip 提示
+该接口无输入参数。
+:::
+
 ### 响应
 
-| 字段    | 类型   | 说明     |
-| ------- | ------ | -------- |
-| uin     | int64  | QQ 号    |
-| isLogin | bool   | 是否登陆 |
-| nick    | string | 昵称     |
+::: tabs
+
+@tab 响应字段
+
+| 字段     | 类型   | 说明  |
+| -------- | ------ | ----- |
+| user_id  | int64  | QQ 号 |
+| nickname | string | 昵称  |
+
+@tab 响应示例
+
+```json
+{
+  "status": "ok",
+  "retcode": 0,
+  "data": {
+    "user_id": 2854200454,
+    "nickname": "Shamrock"
+  }
+}
+```
+
+:::
 
 ## 设置 QQ 个人资料
 
@@ -57,15 +81,72 @@ icon: user
 
 ### 参数
 
+::: tabs
+
+@tab 参数字段
+
 | 字段  | 类型   | 必须 | 说明 |
 | ----- | ------ | ---- | ---- |
 | model | string | 是   | 机型 |
 
+@tab 参数示例
+
+```json
+{
+  "model": "OPPO"
+}
+```
+
+:::
+
 ### 响应
+
+::: tabs
+
+@tab 响应字段
 
 | 字段     | 类型                              | 说明     |
 | -------- | --------------------------------- | -------- |
 | variants | List<[ModelDetail](#modeldetail)> | 机型列表 |
+
+@tab 响应示例
+
+```json
+{
+  "status": "ok",
+  "retcode": 0,
+  "data": {
+    "variants": [
+      {
+        "model_show": "OPPO (黑色)",
+        "need_pay": true
+      },
+      {
+        "model_show": "OPPO (白色)",
+        "need_pay": true
+      },
+      {
+        "model_show": "OPPO (银色)",
+        "need_pay": true
+      },
+      {
+        "model_show": "OPPO (灰色)",
+        "need_pay": true
+      },
+      {
+        "model_show": "OPPO (金色)",
+        "need_pay": true
+      },
+      {
+        "model_show": "OPPO",
+        "need_pay": false
+      }
+    ]
+  }
+}
+```
+
+:::
 
 #### ModelDetail
 
@@ -103,20 +184,20 @@ icon: user
 
 ### 参数
 
-| 字段       | 类型 | 说明         |
-| ---------- | ---- | ------------ |
+| 字段     | 类型 | 说明         |
+| -------- | ---- | ------------ |
 | no_cache | bool | 是否无视缓存 |
 
 ### 响应
 
-| 字段      | 类型              | 说明           |
-| --------- | ----------------- | -------------- |
+| 字段    | 类型                      | 说明           |
+| ------- | ------------------------- | -------------- |
 | clients | Object<[Device](#device)> | 在线客户端列表 |
 
 #### Device
 
-| 字段          | 类型   | 说明     |
-| ------------- | ------ | -------- |
-| app_id    | int64  | 客户端ID |
+| 字段        | 类型   | 说明     |
+| ----------- | ------ | -------- |
+| app_id      | int64  | 客户端ID |
 | device_name | string | 设备名称 |
 | device_kind | string | 设备类型 |
