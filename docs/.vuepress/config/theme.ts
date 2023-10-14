@@ -3,8 +3,8 @@ import { shamrockNavbar } from './navbar'
 import { shamrockSidebar } from './sidebar'
 
 export default hopeTheme({
-  favicon: '/shamrock.png',
-  logo: '/shamrock.png',
+  favicon: '/shamrock.webp',
+  logo: '/shamrock.webp',
   iconAssets: 'fontawesome-with-brands',
   repo: 'linxinrao/Shamrock',
   docsRepo: 'linxinrao/Shamrock',
@@ -13,8 +13,8 @@ export default hopeTheme({
   plugins: {
     mdEnhance: {
       // 添加选项卡支持
-      tabs: true,
-    },
+      tabs: true
+    }
   },
   navbar: shamrockNavbar,
   sidebar: shamrockSidebar
