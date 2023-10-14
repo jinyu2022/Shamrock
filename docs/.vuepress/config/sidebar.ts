@@ -13,6 +13,7 @@ const children = {
     'dispose',
     'group',
     'file',
+    'shamrock',
     'other'
   ],
   message: ['format', 'normal', 'media', 'special', 'advanced'],
