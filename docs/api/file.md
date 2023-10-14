@@ -7,7 +7,7 @@ icon: file
 对于 Shamrock 尚未实现的 API，会在标题添加标记 <Badge text="未实现" type="danger" vertical="baseline" />
 :::
 
-## 上传群文件 <Badge text="未实现" type="danger" />
+## 上传群文件
 
 该接口用于上传群文件。
 
@@ -20,12 +20,9 @@ icon: file
 | group_id | int64  | 群号         |
 | file     | string | 本地文件路径 |
 | name     | string | 储存名称     |
-| folder   | string | 父目录ID     |
 
 ::: warning 注意
-在不提供 `folder` 参数的情况下默认上传到根目录
-
-只能上传本地文件, 需要上传 `http` 文件的话请先下载到本地
+参数 `folder`在Shamrock不受支持。 
 :::
 
 ## 删除群文件 <Badge text="未实现" type="danger" />
