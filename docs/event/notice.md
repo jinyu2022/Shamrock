@@ -65,7 +65,7 @@ icon: bell
 | user_id  | int64  | 变动成员 QQ       |
 | sub_type | string | 子类型(set/unset) |
 
-## 群文件上传 <Badge text="未实现" type="danger" />
+## 群文件上传
 
 当 `notice_type` 为 `group_upload` 时，表示收到了群文件上传事件。
 
