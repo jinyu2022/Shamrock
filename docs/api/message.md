@@ -106,7 +106,8 @@ icon: comment
 | sender       | Object<[Sender](#sender)> | 发送人信息 |
 | message      | object                    | 消息体     |
 | group_id     | int64                     | 群号       |
-| peer_id      | int64                     | 消息接收者（私聊）       |
+| target_id     | int64                     | 消息目标（私聊）       |
+| peer_id      | int64                     | 消息接收者，群聊是群号，私聊时是目标QQ       |
 
 > `peer_id`是其他同类框架所表达的`target_id`!
 
