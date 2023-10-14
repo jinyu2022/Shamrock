@@ -75,6 +75,16 @@ icon: bell
 | user_id  | int64  | 上传者 QQ |
 | file     | object | 文件信息  |
 
+### 群文件信息结构体
+
+| 字段名 | 数据类型 | 说明 |
+| ------- | ------- | ---- |
+| id | string | 文件 ID |
+| name | string | 文件名 |
+| size | int64 | 文件大小 ( 字节数 ) |
+| busid | int64 | busid ( 目前不清楚有什么作用 ) |
+| url | string | 下载地址 |
+
 ## 群禁言
 
 当 `notice_type` 为 `group_ban` 时，表示收到了群禁言事件。
