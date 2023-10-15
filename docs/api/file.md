@@ -155,7 +155,7 @@ icon: file
 | creator_name     | string | 创建者名字 |
 | total_file_count | int32  | 子文件数量 |
 
-## 获取群子目录文件列表 <Badge text="未实现" type="danger" />
+## 获取群子目录文件列表
 
 该接口用于获取群子目录文件列表。
 
@@ -177,7 +177,7 @@ icon: file
 | files   | File[]   | 文件列表   |
 | folders | Folder[] | 文件夹列表 |
 
-## 获取群文件资源链接 <Badge text="未实现" type="danger" />
+## 获取群文件资源链接
 
 该接口用于获取群文件资源链接。
 
