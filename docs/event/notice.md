@@ -73,7 +73,7 @@ icon: bell
 | -------- | ------ | --------- |
 | group_id | int64  | 群号      |
 | user_id  | int64  | 上传者 QQ |
-| file     | object | 文件信息  |
+| file     | object | 群文件信息  |
 
 ### 群文件信息结构体
 
@@ -84,6 +84,27 @@ icon: bell
 | size | int64 | 文件大小 ( 字节数 ) |
 | busid | int64 | busid ( 目前不清楚有什么作用 ) |
 | url | string | 下载地址 |
+
+## 私聊文件上传
+
+当 `notice_type` 为 `private_upload` 时，表示收到了群文件上传事件。
+
+| 字段     | 类型   | 说明      |
+| -------- | ------ | --------- |
+| group_id | int64  | 群号      |
+| user_id  | int64  | 上传者 QQ |
+| file     | object | 私聊文件信息  |
+
+### 群文件信息结构体
+
+| 字段名 | 数据类型 | 说明 |
+| ------- | ------- | ---- |
+| id | string | 文件 ID |
+| name | string | 文件名 |
+| size | int64 | 文件大小 ( 字节数 ) |
+| url | string | 下载地址 |
+| sub_id | string | 子文件ID |
+| exppire | int64 | 文件过期时间 |
 
 ## 群禁言
 
