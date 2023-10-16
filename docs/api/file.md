@@ -7,6 +7,20 @@ icon: file
 对于 Shamrock 尚未实现的 API，会在标题添加标记 <Badge text="未实现" type="danger" vertical="baseline" />
 :::
 
+## 上传私聊文件
+
+该接口用于上传群文件。
+
+终结点: `/upload_private_file`
+
+### 参数
+
+| 字段     | 类型   | 说明         |
+| -------- | ------ | ------------ |
+| user_id | int64  | 目标         |
+| file     | string | 本地文件路径 |
+| name     | string | 储存名称     |
+
 ## 上传群文件
 
 该接口用于上传群文件。
