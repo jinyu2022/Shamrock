@@ -154,7 +154,7 @@ icon: bell
 | client | object | 客户端信息 |
 | online | bool   | 在线状态   |
 
-## 头像戳一戳 <Badge text="未实现" type="danger" />
+## 头像戳一戳
 
 当 `notice_type` 为 `notify` 且 `sub_type` 为 `poke` 时，表示收到了头像戳一戳事件。
 
