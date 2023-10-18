@@ -40,7 +40,7 @@ icon: feather-alt
 | 字段 | 类型   | 必须 | 说明   |
 | ---- | ------ | ---- | ------ |
 | code | string | 是   | ADCode |
-| city | string | 是   | 城市   |
+| city | string | 否   | 城市   |
 
 ### 响应
 

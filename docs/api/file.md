@@ -7,7 +7,21 @@ icon: file
 对于 Shamrock 尚未实现的 API，会在标题添加标记 <Badge text="未实现" type="danger" vertical="baseline" />
 :::
 
-## 上传群文件 <Badge text="未实现" type="danger" />
+## 上传私聊文件
+
+该接口用于上传群文件。
+
+终结点: `/upload_private_file`
+
+### 参数
+
+| 字段     | 类型   | 说明         |
+| -------- | ------ | ------------ |
+| user_id | int64  | 目标         |
+| file     | string | 本地文件路径 |
+| name     | string | 储存名称     |
+
+## 上传群文件
 
 该接口用于上传群文件。
 
@@ -20,15 +34,20 @@ icon: file
 | group_id | int64  | 群号         |
 | file     | string | 本地文件路径 |
 | name     | string | 储存名称     |
-| folder   | string | 父目录ID     |
 
 ::: warning 注意
-在不提供 `folder` 参数的情况下默认上传到根目录
-
-只能上传本地文件, 需要上传 `http` 文件的话请先下载到本地
+参数 `folder`在Shamrock不受支持。 
 :::
 
-## 删除群文件 <Badge text="未实现" type="danger" />
+### 参数
+
+| 字段     | 类型   | 说明         |
+| -------- | ------ | ------------ |
+| group_id | int64  | 群号         |
+| file     | string | 本地文件路径 |
+| name     | string | 储存名称     |
+
+## 删除群文件
 
 该接口用于删除群文件。
 
@@ -46,8 +65,7 @@ icon: file
 该 API 无响应数据
 :::
 
-## 创建群文件文件夹 <Badge text="未实现" type="danger" />
-
+## 创建群文件文件夹
 该接口用于创建群文件文件夹。
 
 ::: warning 注意
@@ -56,19 +74,17 @@ icon: file
 
 终结点: `/create_group_file_folder`
 
-### 参数
+### 响应
 
 | 字段      | 类型   | 说明       |
 | --------- | ------ | ---------- |
-| group_id  | int64  | 群号       |
-| name      | string | 文件夹名称 |
-| parent_id | string | 仅能为 `/` |
+| msg_id  | int32  | 文件消息id       |
 
 ::: tip 提示
 该 API 无响应数据
 :::
 
-## 删除群文件文件夹 <Badge text="未实现" type="danger" />
+## 删除群文件文件夹
 
 该接口用于删除群文件文件夹。
 
@@ -83,7 +99,7 @@ icon: file
 该 API 无响应数据
 :::
 
-## 获取群文件系统信息 <Badge text="未实现" type="danger" />
+## 获取群文件系统信息
 
 该接口用于获取群文件系统信息。
 
@@ -104,7 +120,7 @@ icon: file
 | used_space  | int64 | 已使用空间 |
 | total_space | int64 | 空间上限   |
 
-## 获取群根目录文件列表 <Badge text="未实现" type="danger" />
+## 获取群根目录文件列表
 
 该接口用于获取群根目录文件列表。
 
@@ -153,7 +169,7 @@ icon: file
 | creator_name     | string | 创建者名字 |
 | total_file_count | int32  | 子文件数量 |
 
-## 获取群子目录文件列表 <Badge text="未实现" type="danger" />
+## 获取群子目录文件列表
 
 该接口用于获取群子目录文件列表。
 
@@ -175,7 +191,7 @@ icon: file
 | files   | File[]   | 文件列表   |
 | folders | Folder[] | 文件夹列表 |
 
-## 获取群文件资源链接 <Badge text="未实现" type="danger" />
+## 获取群文件资源链接
 
 该接口用于获取群文件资源链接。
 
